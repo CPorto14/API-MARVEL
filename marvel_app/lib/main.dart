@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 void main() => runApp(MyApp());
@@ -50,7 +51,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Personaje elegijo Hulk'),
+          title: Text('Personaje elegido: Hulk'),
         ),
         body: _isLoading
             ? Center(child: CircularProgressIndicator())
